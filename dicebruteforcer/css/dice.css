@@ -1,0 +1,32 @@
+
+
+/**
+ * Override styles for Die Roller project
+ */
+
+.d6BarExterior {
+	border: 1px solid #3997EE;
+	border-radius: 6px;
+	margin: 2px;
+	padding: 2px;
+	width: 400px;
+}
+
+.d6BarFill {
+	background-color: #5C90D5;
+	border-radius: 4px;
+	font-size: small;
+	height: 100%;
+	overflow: hidden;
+	padding: 1px 8px 1px 8px;
+	text-align: left;
+	width: 16.7%;
+}
+
+.subtext {
+	font-size: small;
+}
+
+.red {
+	color: red;
+}

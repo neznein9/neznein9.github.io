@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Brute force die roller</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/dice.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body style="margin:30px">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+		<div>
+			<h1>
+				Brute force dice calculator
+			</h1>
+			<p>
+				This simulation is currently setup to compare an Angelius vs. a Scythean charging a Jugernaut.
+			</p>
+			<p>
+				<h4>Target: DEF 10, ARM 20</h4>
+				To cripple LEFT ARM: 10 damage to the 1 <br />
+				To cripple MOVEMENT: 12 damage to the 2 <br />
+				To cripple CORTEX: 12 damage to the 4<br />
+				To cripple RIGHT ARM: 11 damage to the 5<span class="red">*</span> (or 5+5 in the 5 and 6 columns)<br />
+			</p>
+		</div>
+
+		<div>
+			<div id="angel">
+				<p>
+					<h4 id="angelHead">Angelius:</h4>
+					First attack: Charge + Armor Piercing: <span id="angel1"></span><br/>
+					Additional attack (boosted): <span id="angel2"/></span><br/>
+					Additional attack: <span id="angel3"/></span><br/>
+				</p>
+			</div>
+
+		<div id="scythean">
+			<p>
+				<h4 id="scythHead">Scythean:</h4>
+				First attack: Charge: <span id="scyth1"></span><br/>
+				Second attack: Charge: <span id="scyth2"></span><br/>
+				Third attack: Charge: <span id="scyth3"></span><br/>
+				Fourth attack: Charge: <span id="scyth4"></span><br/>
+				Fifth attack: Charge: <span id="scyth5"></span><br/>
+				Sixth attack: Charge: <span id="scyth6"></span><br/>
+			</p>
+		</div>
+		<p class="subtext">
+			<span class="red">*</span>Average damage includes attacks that miss.
+		</p>
+
+		<hr />
+		<div id="fdtitle" style="font-weight:bold">Frequency distribution:</div>
+		<p class="subtext">
+			This is a sanity-check. We expect each die rolled in the simulation will have an equal chance of rolling 1, 2, 3, 4, 5, or 6.
+			<br />
+			Furthermore, the mean for all of our rolls should be 3.5 per die, 7.0 for a throw of 2d6, and 10.5 for a throw of 3d6.
+		</p>
+		<div id="outerOnes" class="d6BarExterior">
+			<div id="ones" class="d6BarFill"></div>
+		</div>
+
+		<div id="outerTwos" class="d6BarExterior">
+			<div id="twos" class="d6BarFill"></div>
+		</div>
+
+		<div id="outerThrees" class="d6BarExterior">
+			<div id="threes" class="d6BarFill"></div>
+		</div>
+
+		<div id="outerFours" class="d6BarExterior">
+			<div id="fours" class="d6BarFill"></div>
+		</div>
+
+		<div id="outerFives" class="d6BarExterior">
+			<div id="fives" class="d6BarFill"></div>
+		</div>
+
+		<div id="outerSixes" class="d6BarExterior">
+			<div id="sixes" class="d6BarFill"></div>
+		</div>
+
+		<br />
+		<span id="1d6"></span><br />
+		<span id="2d6"></span><br />
+		<span id="3d6"></span><br />
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+		<script src="js/dice.js"></script>
+    </body>
+</html>
